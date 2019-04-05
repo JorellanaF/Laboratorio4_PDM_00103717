@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             if(params.isNullOrEmpty()) return ""
 
             val movieName = params[0]
-            val movieURL = NetworkUtils().bueldSearchUri(movieName)
+            val movieURL = NetworkUtils().buildSearchUrl(movieName)
 
             return try{
                 NetworkUtils().getRespenseFromHttpUrl(movieURL)
