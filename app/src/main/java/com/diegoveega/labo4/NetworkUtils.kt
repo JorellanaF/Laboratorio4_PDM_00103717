@@ -11,7 +11,7 @@ class NetworkUtils {
     val MOVIES_APÍ_BASEURL = "http://www.omdbapi.com/"
     val TOKEN_API = "f553e331"
 
-    fun bueldSearchUri(movieName: String){
+    fun bueldSearchUri(movieName: String): URL{
         val builtUri = Uri.parse(MOVIES_APÍ_BASEURL)
             .buildUpon()
             .appendQueryParameter("apikey", TOKEN_API)
@@ -26,7 +26,7 @@ class NetworkUtils {
     }
 
     @Throws(IOException::class)
-    fun getRespenseFromHttpUrl(uri:URL): String{
+    fun getRespenseFromHttpUrl(url:URL): String{
         val urlConnection = url.openConnection() as HttpURLConnection
         try{
             val `in` = urlConnection.inputStream
