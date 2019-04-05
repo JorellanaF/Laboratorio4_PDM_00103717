@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Labo4</string>
     <string name="movie_name_string">Buscar Pelicula</string>
+    <string name="movie_title_string">Title Movie</string>
+    <string name="rate_ex_string">Rate</string>
+    <string name="lorem_30_string">Lorem</string>
+    <string name="runtime_ex_string">Runtime</string>
 </resources>
